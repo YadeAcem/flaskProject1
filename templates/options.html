@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Options{% endblock %}
+
+{% block main %}
+    <!-- container met opties die ingevuld kunnen worden -->
+    <form method="POST" action=# enctype="multipart/form-data">
+        <div class="container">
+            <h4>Subscribe here</h4>
+{#            <!-- input voor de files -->#}
+{#            <input type="file" name="file" accept=".docx" required>#}
+{#            <hr noshade="" size="3" style="width:auto;margin-left:0">#}
+            <p1> fill in your name</p1>
+            <input type="text" name="name" placeholder="First Name & Last Name" class="input" style="width: 500px"  required>
+            <hr noshade="" size="3" style="width:auto;margin-left:0">
+
+            <!-- input voor email voor Entrez pubmed-->
+            <p1> fill in your email</p1>
+            <input type="text" name="email" placeholder="123@gmail.com" class="input" style="width: 500px" required>
+            <hr noshade="" size="3" style="width:auto;margin-left:0">
+
+            <p>Subscribe</p>
+            <input type="submit" value="send" class="input">
+        </div>
+    </form>
+
+{% endblock %}

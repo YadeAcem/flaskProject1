@@ -1,0 +1,214 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font: 100% / 1.5 Inconsolata, monospace;
+}
+
+/*body van de html page's*/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    /*font-family: sans-serif;*/
+    font-weight: 600;
+    color: white;
+    line-height: 1.5;
+}
+
+/*css voor de achtergrond pagina, voor alle html*/
+body::after {
+    content: "";
+    background: url("https://img.freepik.com/free-vector/seamless-gold-rhombus-grid-pattern-black-background_53876-97589.jpg?w=2000&t=st=1693993508~exp=1693994108~hmac=5ab4b643384e9d0f28a8af306c990a86142b0dba204d7dd092478f69c78a5537") fixed;
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    overflow: visible;
+    height: auto;
+}
+
+/*header1*/
+h1 {
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+    -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.125),
+    0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.25);
+    font-size: 3em;
+    margin-bottom: 0.2em;
+    margin-top: 0;
+}
+
+
+h2,h3,h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),
+    0 0 0.125em hsla(320, 100%, 60%, 0.5),
+    -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.125),
+    0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.25);
+    text-align: center;
+}
+
+a{
+  color: darkolivegreen;
+}
+
+.header {
+    /*font-family: sans-serif;*/
+    padding: 0.8em;
+    text-align: center;
+    background: #2f2f32;
+    color: #AAAAAA;
+    font-size: 18px;
+}
+
+
+/*main css page */
+#main {
+    display: flex;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background: white url("/static/css_achtergrond.png") no-repeat fixed;
+    /*overflow: clip;*/
+}
+
+/*tekst containter*/
+.container {
+    width: 50em;
+    position: absolute;
+    margin: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, .7);
+    padding: 10px 10px 10px ;
+    border-radius: 25px;
+
+}
+.container p{
+    text-align: center;
+}
+
+.container p1{
+    margin-left: 140px;
+}
+
+.input {
+    margin: auto;
+    display: block;
+}
+
+.tabs{
+    overflow: hidden;
+    background-color: #2f2f32;
+    height: 70px;
+    padding: 10px 10px 10px;
+}
+
+.tabs button{
+    color: white;
+    /*font-family: sans-serif;*/
+    /*font-family: Trebuchet MS;*/
+    font-size: 18px;
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+/*/* Change background color of buttons on hover */
+.tabs button:hover {
+    background-color: #cccccc;
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+    background-color: #2f2f32;/
+}
+
+/*css voor de main tekst container op de homepage*/
+.roundedCornerBackgroundBox {
+    /*margin-top: 30px;*/
+    /*margin-left: 30px;*/
+    /*margin-right: 30px;*/
+    margin: 30px;
+    /*margin: 0;*/
+    height: 500px;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 3em 11em 11em;
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.homepageText{
+    width: 35em;
+    height: 22em;
+    text-wrap: none;
+    margin-right: 5em;
+    padding: 10px;
+    color: white;
+
+}
+
+/*container voor de info van de site op info.html*/
+.inforContainer{
+    /*position: static;*/
+    width: 50em;
+    height: fit-content;
+    margin-top: 10px;
+    padding: 5px;
+    /*float: contour;*/
+    /*alignment: center;*/
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+}
+/*.inforContainer h2,h4{*/
+/*    font-size: 1.5rem;*/
+/*    font-weight: 300;*/
+/*    text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5),*/
+/*    0 0 0.125em hsla(320, 100%, 60%, 0.5),*/
+/*    -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.125),*/
+/*    0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.25);*/
+/*    text-align: center;*/
+/*}*/
+
+.inforContainer p{
+    text-align: center;
+}
+
+/*css voor info op info.html over hoe de opties/filters werken */
+.explanationContainer {
+    position: relative;
+    width: 32em;
+    height: fit-content;
+    padding: 5px;
+    margin-top: 420px;
+    float: left;
+    alignment: center;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+}
+
+.roundedCornerBackgroundBox img{
+    max-width: 100%;
+    height: 20em;
+
+}
+

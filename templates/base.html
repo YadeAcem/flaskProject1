@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%} {% endblock %}</title>
+    <link rel="stylesheet" href="../static/style.css">
+
+</head>
+<body>
+<div class="Header">
+    <div class="tabs">
+        <a href="/">
+            <button class="tablinks" id="home">Home</button>
+        </a>
+        <a href="options">
+            <button class="tablinks" id="option">Options</button>
+        </a>
+
+{#        <a href="result">#}
+{#            <button class="tablinks" id="result">Results</button>#}
+{#        </a>#}
+
+        <a href=info>
+            <button class="tablinks" id="info">Info</button>
+        </a>
+
+    </div>
+</div>
+<div id="main">
+    {% block main %}
+    {% endblock %}
+</div>
+<script src="../static/NavigationButtonBackground.js"></script>
+</body>
+</html>

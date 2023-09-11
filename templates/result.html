@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}result{% endblock %}
+
+{% block main %}
+    <!-- container voor alle results-->
+    <form method="GET" action="result" enctype="multipart/form-data">
+        <div class="container">
+        <h3>Check your mail</h3>
+            <p>Congrats <a>{{ vnaam }}</a> you are now subscribed to our newsletter..</p>
+            <p>with this email: <a>{{ email }}</a></p>
+            <figure>
+                <img src="../static/blah.png">
+            </figure>
+    </div>
+    </form>
+
+{% endblock %}
